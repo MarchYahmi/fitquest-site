@@ -106,7 +106,7 @@ export default function FitQuestLanding() {
     setFormStatus('sending');
 
     try {
-      const response = await fetch('https://formspree.io/f/xpwzgkjq', {
+      const response = await fetch('https://formspree.io/f/mpqlveqy', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
