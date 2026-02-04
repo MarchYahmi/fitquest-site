@@ -12,7 +12,7 @@ const retreats = [
     duration: { en: "5 days", fr: "5 jours" },
     price: 890,
     sport: "CROSSFIT",
-    image: "https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?w=600&q=80",
+    image: "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?w=600&q=80",
     level: { en: "All levels", fr: "Tous niveaux" }
   },
   {
@@ -34,7 +34,7 @@ const retreats = [
     duration: { en: "4 days", fr: "4 jours" },
     price: 750,
     sport: "HYROX",
-    image: "https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?w=600&q=80",
+    image: "https://images.unsplash.com/photo-1599058917212-d750089bc07e?w=600&q=80",
     level: { en: "Advanced", fr: "Avancé" }
   },
   {
