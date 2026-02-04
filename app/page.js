@@ -147,7 +147,7 @@ export default function FitQuestLanding() {
             <div className="w-10 h-10 bg-white flex items-center justify-center">
               <span className="text-black font-black text-lg">F</span>
             </div>
-            <span className="text-xl font-semibold tracking-wider">{t.nav.logo}</span>
+            <span className="text-xl font-light tracking-widest">{t.nav.logo}</span>
           </div>
 
           <div className="flex items-center gap-6">
@@ -159,7 +159,7 @@ export default function FitQuestLanding() {
             </button>
             <a
               href="#partner"
-              className="hidden md:block px-6 py-2 bg-white text-black font-medium text-sm tracking-wider hover:bg-white/90 transition"
+              className="hidden md:block px-6 py-2 bg-white text-black font-normal text-sm tracking-widest hover:bg-white/90 transition"
             >
               {t.nav.cta}
             </a>
@@ -170,17 +170,17 @@ export default function FitQuestLanding() {
       {/* Hero Section */}
       <section className="min-h-screen flex items-center justify-center px-6 pt-20">
         <div className="max-w-5xl mx-auto text-center">
-          <h1 className="text-4xl md:text-6xl lg:text-8xl font-black tracking-tight leading-none mb-8">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-light tracking-wide leading-tight mb-8">
             {t.hero.title}
             <br />
-            <span className="text-orange-500">{t.hero.titleHighlight}</span>
+            <span className="text-orange-500 font-normal">{t.hero.titleHighlight}</span>
           </h1>
           <p className="text-lg md:text-xl text-white/60 max-w-2xl mx-auto mb-12 tracking-wide">
             {t.hero.subtitle}
           </p>
           <a
             href="#partner"
-            className="inline-block px-10 py-4 bg-orange-500 text-black font-semibold text-sm tracking-wide hover:bg-orange-400 transition"
+            className="inline-block px-10 py-4 bg-orange-500 text-black font-normal text-sm tracking-widest hover:bg-orange-400 transition"
           >
             {t.hero.cta}
           </a>
@@ -190,12 +190,12 @@ export default function FitQuestLanding() {
       {/* Sports Section */}
       <section className="py-20 px-6 border-t border-white/10">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-sm font-bold tracking-widest text-white/40 mb-8">{t.sports.title}</h2>
+          <h2 className="text-sm font-light tracking-widest text-white/40 mb-8">{t.sports.title}</h2>
           <div className="flex flex-wrap gap-4">
             {t.sports.list.map((sport, i) => (
               <span
                 key={i}
-                className="px-6 py-3 border border-white/20 text-white/80 font-medium text-sm tracking-wide hover:bg-white hover:text-black transition cursor-pointer"
+                className="px-6 py-3 border border-white/20 text-white/70 font-light text-sm tracking-widest hover:bg-white hover:text-black transition cursor-pointer"
               >
                 {sport}
               </span>
@@ -207,12 +207,12 @@ export default function FitQuestLanding() {
       {/* Value Props */}
       <section className="py-20 px-6 bg-white text-black">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl md:text-5xl font-semibold tracking-tight mb-16">{t.value.title}</h2>
+          <h2 className="text-3xl md:text-5xl font-light tracking-wide mb-16">{t.value.title}</h2>
           <div className="grid md:grid-cols-3 gap-12">
             {t.value.items.map((item, i) => (
               <div key={i}>
-                <div className="text-6xl font-black text-black/10 mb-4">0{i + 1}</div>
-                <h3 className="text-xl font-semibold tracking-wide mb-3">{item.title}</h3>
+                <div className="text-5xl font-light text-black/10 mb-4">0{i + 1}</div>
+                <h3 className="text-lg font-normal tracking-widest mb-3">{item.title}</h3>
                 <p className="text-black/60 leading-relaxed">{item.desc}</p>
               </div>
             ))}
@@ -224,7 +224,7 @@ export default function FitQuestLanding() {
       <section id="partner" className="py-20 px-6 bg-neutral-950">
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-5xl font-semibold tracking-tight mb-4">{t.organizers.title}</h2>
+            <h2 className="text-3xl md:text-5xl font-light tracking-wide mb-4">{t.organizers.title}</h2>
             <p className="text-white/60 text-lg">{t.organizers.subtitle}</p>
           </div>
 
@@ -280,7 +280,7 @@ export default function FitQuestLanding() {
               <button
                 type="submit"
                 disabled={formStatus === 'sending'}
-                className="w-full py-4 bg-orange-500 text-black font-semibold tracking-wide hover:bg-orange-400 transition disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-full py-4 bg-orange-500 text-black font-normal tracking-widest hover:bg-orange-400 transition disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 {formStatus === 'sending' ? '...' : t.organizers.form.submit}
               </button>
@@ -297,7 +297,7 @@ export default function FitQuestLanding() {
               <div className="w-8 h-8 bg-white flex items-center justify-center">
                 <span className="text-black font-black text-sm">F</span>
               </div>
-              <span className="font-semibold tracking-wider">FITQUEST</span>
+              <span className="font-light tracking-widest">FITQUEST</span>
             </div>
             <p className="text-white/40 text-sm text-center">{t.footer.tagline}</p>
             <a href="mailto:yahmirachida@gmail.com" className="text-white/40 text-sm hover:text-white transition">
