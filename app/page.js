@@ -401,7 +401,7 @@ export default function FitQuestLanding() {
               ))}
             </div>
             <a
-              href="mailto:contact@fitquest.com?subject=Partnership%20Inquiry"
+              href="mailto:yahmirachida@gmail.com?subject=Partenariat%20GoFitQuest%20-%20Founding%20Partner"
               className="inline-block px-8 py-4 bg-gradient-to-r from-emerald-500 to-teal-600 text-white rounded-xl font-bold text-lg hover:shadow-lg hover:shadow-emerald-500/25 transition"
             >
               {t.organizers.button}
