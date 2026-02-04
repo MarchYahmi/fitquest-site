@@ -238,12 +238,44 @@ export default function FitQuestLanding() {
           <p className="text-lg md:text-xl text-white/50 max-w-2xl mx-auto mb-10">
             {t.hero.subtitle}
           </p>
-          <a
-            href="#retreats"
-            className="inline-block px-8 py-4 bg-orange-500 text-white font-medium rounded-full hover:bg-orange-400 transition"
-          >
-            {t.hero.cta}
-          </a>
+
+          {/* Search Bar */}
+          <div className="max-w-3xl mx-auto bg-white/5 backdrop-blur border border-white/10 rounded-2xl p-2 mb-6">
+            <div className="flex flex-col md:flex-row gap-2">
+              <div className="flex-1 relative">
+                <select className="w-full px-4 py-3 bg-transparent text-white/70 text-sm appearance-none cursor-pointer focus:outline-none">
+                  <option value="" className="bg-neutral-900">{lang === 'fr' ? 'Sport' : 'Sport'}</option>
+                  <option value="crossfit" className="bg-neutral-900">CrossFit</option>
+                  <option value="hyrox" className="bg-neutral-900">Hyrox</option>
+                  <option value="trail" className="bg-neutral-900">Trail</option>
+                  <option value="bootcamp" className="bg-neutral-900">Bootcamp</option>
+                  <option value="yoga" className="bg-neutral-900">Yoga</option>
+                </select>
+              </div>
+              <div className="hidden md:block w-px bg-white/10"></div>
+              <div className="flex-1">
+                <select className="w-full px-4 py-3 bg-transparent text-white/70 text-sm appearance-none cursor-pointer focus:outline-none">
+                  <option value="" className="bg-neutral-900">{lang === 'fr' ? 'Destination' : 'Destination'}</option>
+                  <option value="france" className="bg-neutral-900">France 🇫🇷</option>
+                  <option value="portugal" className="bg-neutral-900">Portugal 🇵🇹</option>
+                  <option value="spain" className="bg-neutral-900">Espagne 🇪🇸</option>
+                  <option value="greece" className="bg-neutral-900">Grèce 🇬🇷</option>
+                </select>
+              </div>
+              <div className="hidden md:block w-px bg-white/10"></div>
+              <div className="flex-1">
+                <input
+                  type="text"
+                  placeholder={lang === 'fr' ? 'Quand ?' : 'When?'}
+                  className="w-full px-4 py-3 bg-transparent text-white placeholder-white/40 text-sm focus:outline-none"
+                />
+              </div>
+              <button className="px-6 py-3 bg-orange-500 text-white font-medium rounded-xl hover:bg-orange-400 transition">
+                {lang === 'fr' ? 'Rechercher' : 'Search'}
+              </button>
+            </div>
+          </div>
+          <p className="text-white/30 text-sm">{lang === 'fr' ? 'Bientôt disponible — Inscrivez-vous pour être informé du lancement' : 'Coming soon — Sign up to be notified at launch'}</p>
         </div>
       </section>
 
