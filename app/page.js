@@ -233,7 +233,7 @@ export default function FitQuestLanding() {
         <div
           className="absolute inset-0 z-0"
           style={{
-            backgroundImage: 'url(https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=1920&q=80)',
+            backgroundImage: 'url(https://images.unsplash.com/photo-1552674605-db6ffd4facb5?w=1920&q=80)',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
           }}
