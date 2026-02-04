@@ -228,8 +228,20 @@ export default function FitQuestLanding() {
       </nav>
 
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-6">
-        <div className="max-w-4xl mx-auto text-center">
+      <section className="relative pt-32 pb-20 px-6 min-h-screen flex items-center">
+        {/* Background Image */}
+        <div
+          className="absolute inset-0 z-0"
+          style={{
+            backgroundImage: 'url(https://images.unsplash.com/photo-1551632811-561732d1e306?w=1920&q=80)',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+          }}
+        >
+          <div className="absolute inset-0 bg-black/70"></div>
+        </div>
+
+        <div className="max-w-4xl mx-auto text-center relative z-10">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-light tracking-tight leading-tight mb-6">
             {t.hero.title}
             <br />
