@@ -448,7 +448,7 @@ export default function FitQuestLanding() {
               <span className="font-medium">FitQuest</span>
             </div>
             <p className="text-white/30 text-sm text-center">{t.footer.tagline}</p>
-            <a href="mailto:yahmirachida@gmail.com" className="text-white/30 text-sm hover:text-white transition">
+            <a href="mailto:hello@gofitquest.com" className="text-white/30 text-sm hover:text-white transition">
               {t.footer.contact}
             </a>
           </div>
